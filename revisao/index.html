@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=author content="Igor">
+    <meta name="description" content="Revisão do HTML">
+    <meta name="keywords" content="sites, web, tags, html">
+    <title>Revisão de HTML</title>
+    <link rel="shortcut icon" href="img/fav.ico.svg" type="image/x-icon">
+</head>
+
+<body background="/img/imagem1.jpg" style="background-size: cover; font-family: Verdana, Geneva, Tahoma, sans-serif;" text="#ffffff" link="#ff0000" vlink="00ff00"
+    alink="0000ff">
+    <!-- Este é um comentário - Atalho CTRL+; -->
+
+    <header>
+        <h1 id="titulo">Este é o primeiro título</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Este é um título secundário</h2>
+
+        <p>Este é um parágrafo normal com
+            <strong>texto em negrito, pode ser usada a tag b também,</strong>
+            <i>itálico</i>,
+            <del>excluído</del>,
+            <small>pequeno</small>,
+            <q>aspas</q>,
+            <mark>marcação</mark>,
+            <sub>subscrito</sub>,
+            <sup>superescrito</sup>,
+            <abbr title="Hypertext Markup Language">HTML abreviado</abbr>,
+            <u>sublinhado</u>.
+        </p>
+
+        <br>
+
+        <p>Esté é outro parágrafo, com uma lista ordenada:</p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <dl>
+            <dt>Banco de Dados Relacionais</dt>
+                <dd>Oracle</dd>
+                <dd>SQL Server</dd>
+            <dt>Banco de Dados não Relacionais</dt>
+                <dd>MongoDB</dd>
+                <dd>Cassandra</dd>
+        </dl>
+
+        <table border="1">
+            <p>Está é uma tabela</p>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Igor</td>
+                    <td>igor@email.com</td>
+                </tr>
+                <tr>
+                    <td>Teste</td>
+                    <td>teste@email.com</td>
+                </tr>
+                <tr>
+                    <td>Messi</td>
+                    <td>messi@email.com</td>
+                </tr>
+                <tr>
+                    <td>Marcos</td>
+                    <td>marcos@email.com</td>
+                </tr>
+                <tr>
+                    <td>Neymar</td>
+                    <td>ney@email.com</td>
+                </tr>
+                <tr>
+                    <td>Paulo</td>
+                    <td>paulo@email.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total de pessoas: 6</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h3>Título 3</h3>
+        <p>Este é um bloco de texto sem o pre</p>
+        <pre>Este é um bloco de texto pré-formatado</pre>
+        <p>Este é um bloco de texto sem a tag pre</p>
+    </section>
+
+    <section>
+        <h4>Título 4</h4>
+        <p>Usando caracteres para fazer a tabulação</p>
+        <p>&nbsp;*usando um caracter de tabulação</p>
+        <p>&ensp;*usando dois caracteres de tabulação</p>
+        <p>&emsp;*usando três caracteres de tabulação</p>
+    </section>
+
+    <section>
+        <h5>Título 5</h5>
+        <p>Exemplos de Links</p>
+        <a href="http://www.fatecsorocaba.edu.br" target="blank">Site da Fatec Sorocaba</a>
+        <br>
+        <a href="mailto:igorbelocoan3@gmail.com">Envie um email para mim.</a>
+        <p>Links Plus: 
+            As cores no link podem ser mudadas com os comandos links (Cordonlinks),
+            alink (cor do link que foi pressionado), 
+            vlink (cor de um link que já foi visitado),
+            podem ser colocados no BODY.
+        </p>
+    </section>
+
+    <section>
+        <h6>Título 6</h6>
+        <p>Exemplos de imagens</p>
+        <figure>
+            <img src="https://images.pexels.com/photos/17821306/pexels-photo-17821306/free-photo-of-preto-e-branco-p-b-colinas-montes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+            alt="Imagens de montanhas em preto e branco"
+            title="Imagem"
+            width="200" height="150">
+        </figure>
+        <figcaption>Legenda da imagem</figcaption>
+    </section>
+
+    <footer>
+        <a href="#titulo">Exemplo de âncora - link para o item</a>
+        <p>Aula PWEB - 2023</p>
+    </footer>
+</body>
+
+</html>
