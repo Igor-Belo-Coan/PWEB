@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usando forms e css</title>
+    <link rel="shortcut icon" href="/img/form-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form action="" id="formulario">
+            <section>
+                <fieldset>
+                    <legend>Informações do aluno</legend>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required size="50" maxlength="50" autofocus placeholder="Insira seu nome...">
+                    <br>
+                    <br>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="seuemail@email.com">
+                    <br>
+                    <br>
+                    <label for="turma">Turma</label>
+                    <br>
+                    <input type="radio" name="turma" id="turma1" required checked>
+                    <label for="turma1" class="lbl-radio-check">Turma 1</label>
+                    <br>
+                    <input type="radio" name="turma" id="turma2" required>
+                    <label for="turma2" class="lbl-radio-check">Turma 2</label>
+                    <br>
+                    <br>
+                    <label for="disciplinas">Disciplinas</label>
+                    <br>
+                    <input type="checkbox" name="pweb" id="pweb" value="Pweb">
+                    <label for="pweb" class="lbl-radio-check">PWEB</label>
+                    <br>
+                    <input type="checkbox" name="es2" id="es2" value="Es2">
+                    <label for="es2" class="lbl-radio-check">ES2</label>
+                    <br>
+                    <input type="checkbox" name="lbd" id="lbd" value="Lbd">
+                    <label for="lbd" class="lbl-radio-check">LBD</label>
+                    <br>
+                    <br>
+                    <div class="btns">
+                        <input type="submit" value="Enviar" class="btn">
+                        <button type="reset" class="btn">Limpar</button>
+                    </div>
+                </fieldset>
+
+                <br>
+                <br>
+
+                <fieldset>
+                    <legend>Informações complementares</legend>
+                    <label for="mensagem">Biografia</label>
+                    <textarea name="mensagem" id="mensagem" cols="76" rows="5" placeholder="Diga mais sobre você aqui..."></textarea>
+                    <br>
+                    <br>
+                    <label for="cidade">Cidade</label>
+                    <select name="cidade" id="cidade">
+                        <option value="">Selecione</option>
+                        <option value="Itapetininga">Itapetininga</option>
+                        <option value="Sorocaba">Sorocaba</option>
+                        <option value="Porto Feliz">Porto Feliz</option>
+                    </select>
+                </fieldset>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p>Página criada na aula de PWEB - Direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
