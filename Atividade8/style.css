@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.box{
+    padding: 10px;
+    margin: 5px;
+    border: black solid 2px;
+    border-radius: 5px;
+    width: 90px;
+}
+
+.box:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+    transition: 400ms;
+}
+
+.div{
+    margin: 10px;
+}
+
+#result{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.empate{
+    color: grey;
+}
+
+.vitoria{
+    color: green;
+}
+
+.derrota{
+    color: red;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Pedra Papel Tesoura</h1>
+        <h2>Faça a sua escolha:</h2>
+        <section class="options">
+            <a id="pedra" class="box" href="javascript:void(0);" onclick="jogar(1)">Pedra</a>
+            <a id="papel" class="box" href="javascript:void(0);" onclick="jogar(2)">Papel</a>
+            <a id="tesoura" class="box" href="javascript:void(0);" onclick="jogar(3)">Tesoura</a>
+        </section>
+        <div class="div" id="voce"></div>
+        <div class="div" id="pc"></div>
+        <div class="div" id="result"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
