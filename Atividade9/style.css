@@ -1,0 +1,69 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background: #0a516d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 6px 6px 10px -4px rgba(0,0,0,0.75);
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+
+h1{
+    text-align: center;
+}
+
+.idade{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sexo{
+    display: flex;
+    margin: 20px 47px;
+}
+
+.opiniao{
+    display: flex;
+    margin: 20px 47px;
+}
+
+select{
+    width: 180px;
+    padding: 3px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #2b2726;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin: 3px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: 500ms;
+    background-color: #018790;
+}

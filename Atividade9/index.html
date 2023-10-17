@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form class="box">
+            <h1>Pesquisa</h1>
+
+            <div class="idade">
+                <label for="idade">Idade:</label>
+                <input id="idade" type="number" required>
+            </div>
+
+            <div class="sexo">
+                <label for="sexo">Sexo: </label>
+                <select name="sexos" id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+
+            <div class="opiniao">
+                <label for="opiniao">Opinião: </label>
+                <select name="opcoes" id="opiniao">
+                    <option value="4">Ótimo</option>
+                    <option value="3">Bom</option>
+                    <option value="2">Regular</option>
+                    <option value="1">Péssimo</option>
+                </select>
+            </div>
+
+            <div class="btns">
+                <button class="btn" id="enviar" type="submit">Enviar</button>
+                <button class="btn" id="limpar" type="reset">Limpar</button>
+                <button class="btn" id="relatorio" type="button">Gerar relatório</button>
+            </div>
+        </form>
+    </main>
+    <script>
+        var dados = [];
+
+document.getElementById('enviar').addEventListener('click', () => {
+
+    let pessoa = {
+        idade: document.getElementById('idade').value,
+        sexo: document.getElementById('sexo').value,
+        opiniao: document.getElementById('opiniao').value
+    }
+
+    console.log(pessoa.idade)
+    console.log(pessoa.sexo)
+    console.log(pessoa.opiniao)
+
+
+    dados.push(pessoa);
+
+});
+
+document.getElementById('relatorio').addEventListener('click', () => {
+
+    console.log(dados);
+
+});
+
+
+    </script>
+</body>
+
+</html>
