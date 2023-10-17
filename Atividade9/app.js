@@ -1,7 +1,6 @@
 var dados = [];
 
-document.getElementById('enviar').addEventListener('click', (event) => {
-    event.preventDefault();
+document.getElementById('enviar').addEventListener('click', () => {
 
     let pessoa = {
         idade: document.getElementById('idade').value,
@@ -20,6 +19,7 @@ document.getElementById('enviar').addEventListener('click', (event) => {
 document.getElementById('relatorio').addEventListener('click', () => {
 
     console.log(dados);
+    
 });
 
 
