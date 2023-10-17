@@ -20,8 +20,6 @@ document.getElementById('enviar').addEventListener('click', (event) => {
 document.getElementById('relatorio').addEventListener('click', () => {
 
     console.log(dados);
-    console.log(pessoa);
-
 });
 
 

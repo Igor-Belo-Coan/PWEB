@@ -11,7 +11,7 @@
 
 <body>
     <main>
-        <form class="box">
+        <section class="box">
             <h1>Pesquisa</h1>
 
             <div class="idade">
@@ -42,36 +42,10 @@
                 <button class="btn" id="limpar" type="reset">Limpar</button>
                 <button class="btn" id="relatorio" type="button">Gerar relatório</button>
             </div>
-        </form>
+        </section>
     </main>
-    <script>
-        var dados = [];
 
-document.getElementById('enviar').addEventListener('click', () => {
-
-    let pessoa = {
-        idade: document.getElementById('idade').value,
-        sexo: document.getElementById('sexo').value,
-        opiniao: document.getElementById('opiniao').value
-    }
-
-    console.log(pessoa.idade)
-    console.log(pessoa.sexo)
-    console.log(pessoa.opiniao)
-
-
-    dados.push(pessoa);
-
-});
-
-document.getElementById('relatorio').addEventListener('click', () => {
-
-    console.log(dados);
-
-});
-
-
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
