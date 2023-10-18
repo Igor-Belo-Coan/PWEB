@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="box">
+            <h1>Insira 3 números: </h1>
+
+            <div class="numeros">
+                <label for="numero1" required>1º número: </label>
+                <input id="numero1" type="number" required>
+            </div>
+
+            <div class="numeros">
+                <label for="numero2" required>2º número: </label>
+                <input id="numero2" type="number" required>
+            </div>
+
+            <div class="numeros">
+                <label for="numero3" required>3º número: </label>
+                <input id="numero3" type="number" required>
+            </div>
+
+            <div>
+                <h1>Resultados</h1>
+                <p>Maior número: <strong id="maior"></strong></p>
+                <p>Ordem crescente: <strong id="ordem"></strong></p>
+            </div>
+            
+            <div class="btns">
+                <button class="btn" id="calcular">Calcular</button>
+                <button class="btn" id="limpar">Limpar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

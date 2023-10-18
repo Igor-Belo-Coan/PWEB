@@ -15,7 +15,7 @@
             <h1>Pesquisa</h1>
 
             <div class="idade">
-                <label for="idade">Idade:</label>
+                <label for="idade" required>Idade:</label>
                 <input id="idade" type="number" required>
             </div>
 
@@ -38,9 +38,44 @@
             </div>
 
             <div class="btns">
-                <button class="btn" id="enviar" type="submit">Enviar</button>
-                <button class="btn" id="limpar" type="reset">Limpar</button>
-                <button class="btn" id="relatorio" type="button">Gerar relatório</button>
+                <button class="btn" id="enviar">Enviar</button>
+                <button class="btn" id="limpar">Limpar</button>
+                <button class="btn" id="relatorio">Gerar relatório</button>
+            </div>
+
+            <p id="sucess"></p>
+        </section>
+
+        <section class="boxRelatorio dnone" id="boxRelatorio">
+            <h1>Relatório</h1>
+
+            <div>
+                <p>Média de idade das pessoas: <strong id="mediaIdade"></strong> </p>
+            </div>
+
+            <div>
+                <p>Idade da pessoa mais velha: <strong id="maiorIdade"></strong></p>
+            </div>
+
+            <div>
+                <p>Idade da pessoa mais nova: <strong id="menorIdade"></strong></p>
+            </div>
+
+            <div>
+                <p>Quantidade de respostas "péssimo": <strong id="qtdPessimo"></strong></p>
+            </div>
+
+            <div>
+                <p>Porcentagem de respostas "ótimo" e "bom": <strong id="porcentOtimoBom"></strong></p>
+            </div>
+
+            <div>
+                <p>Quantidade de mulheres: <strong id="mascFemf"></strong></p>
+                <p>Quantidade de homens: <strong id="mascFemm"></strong></p>
+            </div>
+
+            <div class="btns">
+                <button class="btn" id="fechar">Fechar</button>
             </div>
         </section>
     </main>

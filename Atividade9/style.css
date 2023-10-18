@@ -18,42 +18,43 @@ main {
     height: 300px;
     background: #fff;
     border-radius: 6px;
-    box-shadow: 6px 6px 10px -4px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.75);
     box-sizing: border-box;
     padding: 20px 40px;
+    margin: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-.idade{
+.idade {
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-.sexo{
+.sexo {
     display: flex;
     margin: 20px 47px;
 }
 
-.opiniao{
+.opiniao {
     display: flex;
     margin: 20px 47px;
 }
 
-select{
+select {
     width: 180px;
     padding: 3px;
 }
 
-.btns{
+.btns {
     display: flex;
     justify-content: center;
 }
 
-.btn{
+.btn {
     background-color: #2b2726;
     color: white;
     border: unset;
@@ -62,8 +63,35 @@ select{
     margin: 3px;
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     transition: 500ms;
     background-color: #018790;
+}
+
+#sucess {
+    text-align: center;
+    color: rgb(10, 199, 10);
+    margin-top: 8px;
+}
+
+.boxRelatorio {
+    width: 600px;
+    height: 500px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 6px 6px 10px -4px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    padding: 20px 40px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dnone {
+    display: none;
+}
+
+.dflex {
+    display: flex;
 }
