@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2</title>
+</head>
+<body>
+    <script>
+        function Conta(){
+            var nome;
+            var banco;
+            var numero;
+            var saldo;
+
+            this.setNome = (value) => {
+                this.nome = value
+            }
+
+            this.getNome = () => {
+                return this.nome;
+            }
+
+            this.setBanco = (value) => {
+                this.banco = value
+            }
+
+            this.getBanco = () => {
+                return this.banco;
+            }
+
+            this.setNumero = (value) => {
+                this.numero = value
+            }
+
+            this.getNumero = () => {
+                return this.numero;
+            }
+
+            this.setSaldo = (value) => {
+                this.saldo = value
+            }
+
+            this.getSaldo = () => {
+                return this.saldo;
+            }
+        }
+
+        function ContaCorrente(){
+            var saldoEspecial;
+
+            this.setSaldoEspecial = (value) => {
+                this.saldoEspecial = value
+            }
+
+            this.getSaldoEspecial = () => {
+                return this.saldoEspecial;
+            }
+        }
+
+        function ContaPoupanca(){
+            var juros;
+            var dataVenc;
+
+            this.setJuros = (value) => {
+                this.juros = value
+            }
+
+            this.getJuros = () => {
+                return this.juros;
+            }
+
+            this.setDataVenc = (value) => {
+                this.dataVenc = value
+            }
+
+            this.getDataVenc = () => {
+                return this.dataVenc;
+            }
+        }
+
+        ContaCorrente.prototype = new Conta();
+        ContaPoupanca.prototype = new Conta();
+
+        var contaCorrente = new ContaCorrente();
+        contaCorrente.setNome(prompt("(Conta Corrente) - Informe o nome: "));
+        contaCorrente.setBanco(prompt("(Conta Corrente) - Informe o banco: "));
+        contaCorrente.setNumero(prompt("(Conta Corrente) - Informe o número: "));
+        contaCorrente.setSaldo(prompt("(Conta Corrente) - Informe o saldo: "));
+        contaCorrente.setSaldoEspecial(prompt("(Conta Corrente) - Informe o saldo especial: "));
+
+        var contaPoupanca = new ContaPoupanca();
+        contaPoupanca.setNome(prompt("(Conta Poupança) - Informe o nome: "));
+        contaPoupanca.setBanco(prompt("(Conta Poupança) - Informe o banco: "));
+        contaPoupanca.setNumero(prompt("(Conta Poupança) - Informe o número: "));
+        contaPoupanca.setSaldo(prompt("(Conta Poupança) - Informe o saldo: "));
+        contaPoupanca.setJuros(prompt("(Conta Poupança) - Informe os juros: "));
+        contaPoupanca.setDataVenc(prompt("(Conta Poupança) - Informe a data de vencimento: "));
+
+        alert(
+            "---Conta Corrente---" +
+            "\n\tNome: " + contaCorrente.getNome() +
+            "\n\tBanco: " + contaCorrente.getBanco() +
+            "\n\tNúmero: " + contaCorrente.getNumero() +
+            "\n\tSaldo: " + contaCorrente.getSaldo() + 
+            "\n\tSaldo especial: " + contaCorrente.getSaldoEspecial() + 
+
+            "\n\n---Conta Poupança---" +
+            "\n\tNome: " + contaPoupanca.getNome() +
+            "\n\tBanco: " + contaPoupanca.getBanco() +
+            "\n\tNúmero: " + contaPoupanca.getNumero() +
+            "\n\tSaldo: " + contaPoupanca.getSaldo() + 
+            "\n\tJuros: " + contaPoupanca.getJuros() + 
+            "\n\tData de vencimento: " + contaPoupanca.getDataVenc() 
+        );
+    </script>
+</body>
+</html>
