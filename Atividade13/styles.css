@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 300px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+}

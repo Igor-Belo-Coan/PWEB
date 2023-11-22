@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+        <br>
+        <form name="nomeform" onsubmit="return validar();">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="comentario">Comentário:</label>
+            <textarea name="comentario" id="comentario"></textarea><br><br>
+
+            <div class="radio-group">
+                <strong>Pesquisa:</strong><br><br>
+                Primeira vez nessa página?<br><br>
+                <input type="radio" name="pesquisa" value="sim" id="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="pesquisa" value="nao" id="nao">
+                <label for="nao">Não</label><br><br>
+            </div>
+
+            <input type="submit" value="Enviar">
+            <input type="button" value="Limpar" onclick="limparCampos();">
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
